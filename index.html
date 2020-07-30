@@ -1,0 +1,1369 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<!-- shw2018 洪卫  modify 2019.08.15-->
+
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="个人博客 前端学习 新技术探索">
+    <meta name="baidu-site-verification" content="fmlEuI34ir">
+    <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
+    <meta name="description" content="Mrxh的博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Mrxh的博客</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/aos/3.0.0-beta.6/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/lightgallery/1.6.12/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    <style type="text/css">
+        
+            
+            code[class*="language-"],
+            pre[class*="language-"] {
+                white-space: pre !important;
+            }
+
+        
+    </style>
+
+    <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?46e79e71af0709a5b9106bf20cecc493";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    
+    
+        <script>
+            (function(){
+                var bp = document.createElement('script');
+                var curProtocol = window.location.protocol.split(':')[0];
+                if (curProtocol === 'https') {
+                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+                }
+                else {
+                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
+            })();
+        </script>
+    
+
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body>
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Mrxh的博客</span>
+                </a>
+            </div>
+            
+
+
+<!-- <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="" class="waves-effect waves-light">
+            
+            <i class="fa fa-heartbeat"></i>
+            
+            <span>娱乐</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于我</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/contact" class="waves-effect waves-light">
+            
+            <i class="fa fa-envelope"></i>
+            
+            <span>留言板</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>友情链接</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul> -->
+
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right nav-menu">
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/" class="waves-effect waves-light">
+              
+                <i class="fa fa-home"></i>
+              
+              <span>首页</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+              <a href="" class="waves-effect waves-light">
+                
+                  <i class="fa fa-archive"></i>
+                
+                <span>归档</span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+
+            <ul class="sub-nav menus_item_child ">
+              
+                <li> 
+                  <a href="/tags" >
+                    
+                      <i class="fa fa-tags" style="margin-top: -20px;"></i>
+                    
+                    <span>标签</span>
+                  </a>
+                </li>
+              
+                <li> 
+                  <a href="/categories" >
+                    
+                      <i class="fa fa-bookmark" style="margin-top: -20px;"></i>
+                    
+                    <span>分类</span>
+                  </a>
+                </li>
+              
+                <li> 
+                  <a href="/archives" >
+                    
+                      <i class="fa fa-paper-plane" style="margin-top: -20px;"></i>
+                    
+                    <span>时间轴</span>
+                  </a>
+                </li>
+               
+            </ul>
+          
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+              <a href="" class="waves-effect waves-light">
+                
+                  <i class="fa fa-heartbeat"></i>
+                
+                <span>娱乐</span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+
+            <ul class="sub-nav menus_item_child ">
+              
+                <li> 
+                  <a href="/music" >
+                    
+                      <i class="fa fa-music" style="margin-top: -20px;"></i>
+                    
+                    <span>音乐</span>
+                  </a>
+                </li>
+              
+                <li> 
+                  <a href="/AV" >
+                    
+                      <i class="fa fa-film" style="margin-top: -20px;"></i>
+                    
+                    <span>视频</span>
+                  </a>
+                </li>
+              
+                <li> 
+                  <a href="/galleries" >
+                    
+                      <i class="fa fa-photo" style="margin-top: -20px;"></i>
+                    
+                    <span>相册</span>
+                  </a>
+                </li>
+               
+            </ul>
+          
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/about" class="waves-effect waves-light">
+              
+                <i class="fa fa-user-circle-o"></i>
+              
+              <span>关于我</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/contact" class="waves-effect waves-light">
+              
+                <i class="fa fa-envelope"></i>
+              
+              <span>留言板</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/friends" class="waves-effect waves-light">
+              
+                <i class="fa fa-address-book"></i>
+              
+              <span>友情链接</span>
+            </a>
+
+            
+      </li>
+    
+
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Mrxh的博客</div>
+        <div class="logo-desc">
+            
+            肖航的个人hexo博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-heartbeat"></i>
+                
+                娱乐
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于我
+            </a>
+        </li>
+        
+        <li>
+            <a href="/contact" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-envelope"></i>
+                
+                留言板
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-address-book"></i>
+                
+                友情链接
+            </a>
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/shw2018/shw2018.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+
+   
+   
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
+<!-- <ul class="menu-list mobile-menu-list">
+    
+        <li class="m-nav-item">
+                
+                    <a href="/" class="waves-effect waves-light">
+                        
+                        <i class="fa fa-fw fa-home"></i>
+                        
+                        首页
+                    </a>
+              
+            </li>
+        
+        <li class="m-nav-item">
+                
+                    <a href="javascript:;">
+                            
+                            <i class="fa fa-fw fa-archive"></i>
+                            
+                            归档
+                            <span class="m-icon"><i class="fa fa-chevron-right"></i></span>
+                    </a>
+                <ul>
+                  
+                    <li> 
+                      <a href="/tags" >
+                           
+                            <i class="fa fa-tags" style="left: 18px; position: absolute;"></i>
+                       
+                       <span>标签</span>
+                      </a>
+                    </li>
+                  
+                    <li> 
+                      <a href="/categories" >
+                           
+                            <i class="fa fa-bookmark" style="left: 18px; position: absolute;"></i>
+                       
+                       <span>分类</span>
+                      </a>
+                    </li>
+                  
+                    <li> 
+                      <a href="/archives" >
+                           
+                            <i class="fa fa-paper-plane" style="left: 18px; position: absolute;"></i>
+                       
+                       <span>时间轴</span>
+                      </a>
+                    </li>
+                   
+                </ul>
+              
+            </li>
+        
+        <li class="m-nav-item">
+                
+                    <a href="javascript:;">
+                            
+                            <i class="fa fa-fw fa-heartbeat"></i>
+                            
+                            娱乐
+                            <span class="m-icon"><i class="fa fa-chevron-right"></i></span>
+                    </a>
+                <ul>
+                  
+                    <li> 
+                      <a href="/music" >
+                           
+                            <i class="fa fa-music" style="left: 18px; position: absolute;"></i>
+                       
+                       <span>音乐</span>
+                      </a>
+                    </li>
+                  
+                    <li> 
+                      <a href="/AV" >
+                           
+                            <i class="fa fa-film" style="left: 18px; position: absolute;"></i>
+                       
+                       <span>视频</span>
+                      </a>
+                    </li>
+                  
+                    <li> 
+                      <a href="/galleries" >
+                           
+                            <i class="fa fa-photo" style="left: 18px; position: absolute;"></i>
+                       
+                       <span>相册</span>
+                      </a>
+                    </li>
+                   
+                </ul>
+              
+            </li>
+        
+        <li class="m-nav-item">
+                
+                    <a href="/about" class="waves-effect waves-light">
+                        
+                        <i class="fa fa-fw fa-user-circle-o"></i>
+                        
+                        关于我
+                    </a>
+              
+            </li>
+        
+        <li class="m-nav-item">
+                
+                    <a href="/contact" class="waves-effect waves-light">
+                        
+                        <i class="fa fa-fw fa-envelope"></i>
+                        
+                        留言板
+                    </a>
+              
+            </li>
+        
+        <li class="m-nav-item">
+                
+                    <a href="/friends" class="waves-effect waves-light">
+                        
+                        <i class="fa fa-fw fa-address-book"></i>
+                        
+                        友情链接
+                    </a>
+              
+            </li>
+        
+
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/shw2018/shw2018.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul> -->
+
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/shw2018/shw2018.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    <!-- shw2018 Mrxh  modify 2019.08.15-->
+
+<style>
+    .carousel-control {
+        width: 45px;
+        height: 45px;
+        line-height: 55px;
+        border-radius: 45px;
+        background: transparent;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    #prev-cover {
+        position: absolute;
+        top: 48%;
+        left: 8px;
+    }
+
+    #next-cover {
+        position: absolute;
+        top: 48%;
+        right: 8px;;
+    }
+
+    #prev-cover i {
+        margin-right: 3px;
+    }
+
+    #next-cover i {
+        margin-left: 3px;
+    }
+
+    .carousel-control:hover {
+        background-color:rgba(0, 0, 0, .4);
+    }
+
+    .carousel-control i {
+        color: #fff;
+        font-size: 2.4rem;
+    }
+</style>
+
+
+
+<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
+    
+    <div id="prev-cover" class="left waves-effect carousel-control">
+        <i class="icon fa fa-angle-left"></i>
+    </div>
+    <div id="next-cover" class="right waves-effect carousel-control">
+        <i class="icon fa fa-angle-right"></i>
+    </div>
+    
+
+    <div class="carousel-item red white-text bg-cover about-cover">
+        <div class="container">
+            <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                <!-- 
+                    Mrxh的博客
+                 -->
+                
+                    Mrxh的博客
+                
+            </div>
+
+            <div class="description center-align">
+                
+                    <!-- 肖航的个人hexo博客 -->
+                    <span id="jinrishici-sentence">正在加载今日诗词...</span>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<script>
+// 每天切换 banner 图.  Switch banner image every day.
+$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+</script>
+
+
+
+            <div class="cover-btns">
+                <a href="#indexCard" class="waves-effect waves-light btn">
+                    <i class="fa fa-angle-double-down"></i>开始阅读
+                </a>
+
+                
+                <a href="https://github.com/Mrxh" class="waves-effect waves-light btn" target="_blank">
+                    <i class="fa fa-github-alt"></i>Github
+                </a>
+                
+            </div>
+            <div class="cover-social-link">
+    <a href="https://github.com/Mrxh" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+ 
+    <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2929314899@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+
+    <a href="https://zhihu.com/people/wei-liao-ming-tian-91-6" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fa fa-inverse">知</i>
+    </a>
+
+
+
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=2929314899&site=qq&menu=yes" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/5610887879" class="tooltipped" target="_blank" data-tooltip="关注我的微博" data-position="top" data-delay="50">
+        <i class="fa fa-weibo"></i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa fa-rss"></i>
+    </a>
+</div>
+        </div>
+    </div>
+
+    
+    
+
+    
+    
+    <div class="carousel-item amber white-text carousel-post bg-cover"
+            style="background-image: url('/medias/banner/9.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    <div class="title center-align">js数组去重</div>
+                    <div class="description center-align">
+                    
+                        我觉得需要结合实际项目需求开发，根据需求来选择哪种去重方法，根据需求来修改某些条件，或者增加条件，适合需求的才是最好的去重方法。
+                    
+                    </div>
+                    <div class="cover-btns">
+                        <a href="/2020/07/08/js-set-source/" class="waves-effect waves-light btn" target="_blank">
+                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="carousel-item amber white-text carousel-post bg-cover"
+            style="background-image: url('/medias/banner/7.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    <div class="title center-align">博客开源</div>
+                    <div class="description center-align">
+                    
+                        倒腾了一两周总算把个人博客网站完善了，目前这个版本使用应该是够了，当然还有一些优化项和功能增加后续在慢慢更新，为了回馈开源，今天准备把我自己修改完善的`blog`网站源代码开源。这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了。
+                    
+                    </div>
+                    <div class="cover-btns">
+                        <a href="/2019/08/27/blog-open-source/" class="waves-effect waves-light btn" target="_blank">
+                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+<script>
+$(function () {
+    let coverSlider = $('.carousel');
+    coverSlider.carousel({
+        duration: Number('120'),
+        fullWidth: true,
+        indicators: 'true' === 'true'
+    });
+
+    let carouselIntervalId;
+    
+    // Loop to call the next cover article picture.
+    let autoCarousel = function() {
+        carouselIntervalId = setInterval(function () {
+            coverSlider.carousel('next');
+        }, 5000);
+    };
+    autoCarousel();
+    
+
+    let restartPlay = function () {
+        
+        clearInterval(carouselIntervalId);
+        autoCarousel();
+        
+    };
+
+    
+    // prev and next cover post.
+    $('#prev-cover').click(function () {
+        coverSlider.carousel('prev');
+        restartPlay();
+    });
+    $('#next-cover').click(function () {
+        coverSlider.carousel('next');
+        restartPlay();
+    });
+    
+});
+</script>
+
+
+
+<main class="content">
+
+    
+    <div id="indexCard" class="index-card">
+        <div class="container ">
+            <div class="card">
+                <div class="card-content">
+                    
+                    
+                    <!-- shw2018 洪卫  modify 2019.08.15-->
+
+
+<link rel="stylesheet" href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css">
+<div class="music-player">
+    
+    <div class="row">
+        
+        
+        <div class="col s12 ">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script>
+<script>
+    $(function () {
+        console.log('[{"name":"Beautiful World","artist":"Westlife","url":"http://music.163.com/song/media/outer/url?id=20707408.mp3","cover":"https://p2.music.126.net/MEWr-THANcYy-1jvx334_Q==/109951163167214019.jpg?param=130y130","lrc":"[00:00.00][00:02.700]Here we go, lost in the lessons[00:05.290]Sometimes I mess up my intentions[00:08.070]I get lost, the cost was losing everything I‘ve known[00:13.150]Laying here, staring at the ceiling[00:15.830]Sometimes still dealing with the feelings[00:18.450]Where I‘ve been, what I‘ve done[00:20.810]I‘m so far out there on my own[00:23.910]so quick to point the finger[00:26.420]To find the one to blame[00:29.010]So hard to realize, I kept getting in my own way[00:33.940][00:34.400]I never thought that I was that strong[00:40.490]To carry on, carry on tonight[00:45.800]Forgiveness in your eyes, with nothing to hide[00:50.210]All I know, it‘s shown me[00:53.770]It‘s a beautiful world[00:58.370]It‘s a beautiful world[01:04.230][01:06.188]No more fearing my reflection[01:08.668]Here I am, with these imperfections[01:11.260]You know my flaws,[01:13.540]But you don‘t care, can take them all[01:16.700]Till now I was barely breathing[01:19.310]But you gave me something to believe in[01:21.840]We‘re writing history[01:23.930]Life‘s made up of small victories[01:27.239]We could go round in circles[01:29.659]And never get to here[01:32.409]So good to realize that we have nothing left to fear[01:37.280][01:37.790]I never thought that I was that strong[01:43.819]To carry on, carry on tonight[01:49.110]Forgiveness in your eyes, with nothing to hide[01:53.730]All I know, it‘s shown me[01:56.828]It‘s a beautiful world[02:01.980]It‘s a beautiful world[02:07.608][02:09.259]So quick to point the finger[02:11.869]When it was me to blame[02:14.579]So hard to realize I kept getting in my own way[02:19.750]I never thought that I was that strong[02:20.569][02:26.000]To carry on, carry on tonight[02:31.259]Forgiveness in your eyes, with nothing to hide[02:35.810]All I know, it‘s shown me[02:39.539]It‘s a beautiful world[02:41.619][02:41.940]Oh, the stars alight[02:44.339]Let‘s watch them shine for you and I[02:51.179]Oh, these open skies[02:54.910]Can we just lie here a while[03:00.280]In this beautiful world[03:02.429][03:02.929]I never thought that I was that strong[03:08.109]To carry on[03:12.149]It‘s a beautiful world[03:16.060]It‘s a beautiful world[03:21.369]"},{"name":"SABLE","artist":"TV动画《M3~黑色之钢~》片尾曲","url":"http://music.163.com/song/media/outer/url?id=28828613.mp3","cover":"http://p1.music.126.net/InVIQE3FGPLZrv6K1UuRxQ==/5971447650923215.jpg?param=130y130","lrc":"[00:22.01]You lose your mind, you crash[00:23.84]A nervous breakdown[00:25.82]You feel an urge inside, you crush[00:28.44]There‘s no escape now[00:29.92][00:30.73]You try to change your life, you jump[00:33.15]Another letdown[00:35.31]But then you hear a voice inside[00:37.93]You gotta open up your vision[00:39.78]See the life bestowed on you[00:41.49]Blinded by reality[00:43.88]Broken ideology[00:46.16]Heart in captivity[00:48.57]Hold on[00:49.47]Exceeding the borders within[00:51.04]Seize your capability[00:53.51]Endless possibility[00:55.72]Find your individuality[00:58.19]Take pride, let the chase begin[00:59.66][01:00.05]Don‘t tell me what direction you think I should take[01:03.24](I know I‘m gonna find the way)[01:04.83]Don‘t tell me that this sable is for my own sake[01:07.65](Hear what I‘ve got to say)[01:09.75]Don‘t tell me to believe the decisions you make[01:12.46](I‘m facing a new day)[01:14.35]So open up your blinded eyes[01:16.95]Stop living a lie and start living your life[01:19.47][01:19.97]My way or no way[01:22.13]Today you‘re falling away[01:24.63]My way or no way[01:26.94]Today I‘m breaking away[01:29.44][01:31.63]You need a sign, you search[01:33.31]You‘re burning out[01:35.31]Your heart is run down[01:37.89]A system shut down[01:40.61]All you want is to face the fatal error[01:42.73]You‘ll never backdown[01:45.03]‘Cause it‘s now that you know the time is right[01:47.53]You gotta lead a revolution[01:49.42]Believe the only light in you[01:51.11]Look now, my sweetest fantasy is blinding your reality[01:55.77]I‘m breaking down the walls surrounding[01:57.87]your riduculously boring ideology[02:00.60]First chance, you let it slip away[02:02.84]One chance, you don‘t want to throw away[02:05.25]Fate is turning, returning to you square one[02:07.96]Get set and the game begins[02:09.65]Don‘t tell me that I‘m making another mistake[02:12.53](I know I‘m gonna find the way)[02:14.52]Don‘t tell me that I‘ll end in another heartache[02:17.29](Hear what I‘ve got to say)[02:19.23]Don‘t tell me that today is already too late[02:22.08](I‘m facing a new day)[02:23.95]So open up your blinded eyes[02:26.52]Stop living a lie and start living your life[02:31.98][02:39.12]Not everything is always what it seems[02:43.65]But there are things beyond what you could see[02:48.56]It doesn‘t mean that all the critical things are lost[02:51.02]It doesn‘t take defiance to be heard[02:53.36]You never needed the anger to move on[02:55.72]All you need is the will to hold on[02:58.11]Last chance[02:59.39]Take it or leave it[03:00.40]Nothing begins if you don‘t see it[03:02.80]This is how your life goes[03:08.00][03:09.95]Don‘t tell me what direction you think I should take[03:12.56](I know I‘m gonna find the way)[03:14.48]Don‘t tell me that this sable is for my own sake[03:17.31](Hear what I‘ve got to say)[03:19.22]Don‘t tell me to believe the decisions you make[03:22.11](I‘m facing a new day)[03:24.02]So open up your blinded eyes[03:26.54]Stop living a lie and start living your life[03:29.22]My way or no way[03:31.68]Today you‘re falling away[03:34.18]My way or no way[03:36.44]Today I‘m breaking away[03:39.09]My way or no way[03:41.52]Today you‘re falling away[03:43.83]My way or no way[03:46.09]Today I‘m breaking away"},{"name":"Hello My Love","artist":"Westlife","url":"http://music.163.com/song/media/outer/url?id=1338728670.mp3","cover":"https://p2.music.126.net/P2_COhPmlhsOpoj31DDLeA==/109951163785867445.jpg?param=130y130","lrc":"[00:00.000] 作曲 : Steve Mac/Ed Sheeran[00:00.630] 作词 : Steve Mac/Ed Sheeran[00:01.892]No one knows about the things[00:02.860]That I‘ve been through with you[00:05.682]There were times I‘d drive you nearly mental[00:09.620]But when your mad, you are still beautiful[00:17.573]And I know that I‘m punchin‘ way above[00:21.546]So lucky that we fell in love[00:25.395]Sometimes I wonder am I enough?[00:30.419]Cause you could have someone without a belly or a temper[00:35.817]Perfect teeth, hair growing where it’s meant to[00:39.567]You know my lips are all that I can hold against you[00:43.366]This is all I‘ll ever need, you and I[00:47.859]Hello My Love[00:50.819]I’ve been searching for someone like you[00:55.639]For most my life[00:58.785]Happiness ain’t a thing I’m used to[01:03.297]You could‘ve fallen hard for anyone[01:07.144]Plenty of fish in sea, hey now[01:11.435]For all of time, now I know[01:15.035]It‘s just my angel and me[01:20.563]No one know about all the good things you do[01:24.425]When people take advantage of you[01:28.359]Your heart is pure and so beautiful[01:36.287]And I know that it‘s just the way you are[01:40.327]Father‘s eyes but mother‘s daughter[01:44.240]And you tell me that you don‘t give enough[01:49.259]And now I found someone with all the boxes I want ticked[01:54.637]Cause your love is all I ever wanted[01:58.656]Set my heart on fire, I needed something[02:02.160]This is all I wanted to be, you and I[02:06.561]Hello My Love[02:09.444]I’ve been searching for someone like you[02:14.227]For most of my life[02:17.438]Happiness ain’t a thing I’m used to[02:22.091]You could‘ve fallen hard for anyone[02:25.709]Plenty of fish in sea, hey now[02:30.146]For all of time, now I know[02:33.407]It‘s just my angel and me[02:36.462]Cause you could have someone without a belly or a temper[02:41.822]Perfect teeth, hair growing where it’s meant to[02:45.611]You know my lips are all that I can hold against you[02:49.327]This is all I‘ll ever need[02:52.416]You and I[02:54.335]You and I[02:55.726]Hello My Love[02:58.784]I’ve been searching for someone like you[03:03.531]For most of my life[03:06.330]Happiness ain’t a thing I’m used to[03:11.316]You could‘ve fallen hard for anyone[03:15.047]Plenty of fish in sea, hey now[03:19.375]For all of time, now I know[03:22.938]It‘s just my angel and me"},{"name":"If I Let You Go","artist":"Westlife","url":"http://music.163.com/song/media/outer/url?id=27220254.mp3","cover":"https://p2.music.126.net/TcOOoZSbISGT9AkhUtwOsg==/5644892697128237.jpg?param=130y130","lrc":"[00:04.00]Day after day, time pass away[00:10.00]And I just can‘t get you off my mind[00:15.00]Nobody knows, I hide it inside[00:20.00]I keep on searching, but I can‘t find....[00:25.00]The courage to show, to letting you know[00:31.00]I‘ve never felt so much love before[00:36.00]And once again, I‘m thinking about[00:41.00]Taking the easy way out[00:45.00]But if I let you go, I will never know[00:51.00]What my life would be, holding you close to me[00:56.00]Will I ever see, you smiling back at me?[01:01.00]Oh yeah[01:02.00]How will I know....?[01:05.00]If I let you go[01:10.00]Night after night, I hear myself say[01:15.00]Why can‘t this feeling just fade away[01:20.00]There‘s no-one like you, you speak to my heart[01:25.00]It‘s such a shame, we‘re worlds apart[01:30.00]I‘m too shy to ask, I‘m too proud to lose[01:35.00]But sooner or later, I gotta choose[01:40.00]And once again, I‘m thinking about[01:46.00]Taking the easy way out[01:50.00]But if I let you go, I will never know[01:56.00]What my life would be, holding you close to me[02:01.00]Will I ever see, you smiling back at me?[02:06.00]Oh yeah[02:07.00]How will I know....?[02:10.00]If I let you go[02:17.00]If I let you go[02:22.00]Ooh baby[02:32.00]Once again I‘m thinking about[02:38.00]taking the easy way out[02:43.00]But if I let you go, I will never know[02:49.00]What my life would be, holding you close to me[02:54.00]Will I ever see, you smiling back at me?[02:59.00]Oh yeah[03:00.00]How will I know....?[03:03.00]If I let you go[03:05.00]But if I let you go, I will never know[03:10.00]Oh baby[03:15.00]Will I ever see, you smiling back at me?[03:20.00]Oh yeah[03:21.00]How will I know....?[03:27.00]If I let you go"},{"name":"Señorita","artist":"Shawn Mendes/Camila Cabello","url":"http://music.163.com/song/media/outer/url?id=1373168742.mp3","cover":"https://p2.music.126.net/eSrLKe5g3U8jX-lb629q6A==/109951164162885535.jpg?param=130y130","lrc":"[by:Trap_Girl][00:00.000] 作曲 : Shawn Mendes/Camila Cabello/Andrew Wotman/Benjamin Levin/Ali Tamposi/Charlotte Emma Aitchison/Jack Patterson/Magnus August Höiberg[00:01.000] 作词 : Shawn Mendes/Camila Cabello/Andrew Wotman/Benjamin Levin/Ali Tamposi/Charlotte Emma Aitchison/Jack Patterson/Magnus August Höiberg[00:12.22]Camila Cabello：[00:15.29]I love it when you call me Señorita[00:19.36]I wish I could pretend I didn‘t need ya[00:23.43]But every touch is ooh la la la[00:26.54]It‘s true la la la[00:28.51]Ooh I should be runnin‘[00:30.57]Ooh you keep me coming for ya[00:32.95]Shawn Mendes：[00:33.29]Land in miami[00:35.22]The air was hot from summer rain[00:37.27]Sweat dripping off me[00:39.44]Before I even knew her name la la la[00:44.41]It felt like ooh la la la[00:47.07]Yeah noo[00:49.47]Sapphire moonlight[00:51.50]We danced for hours in the sand[00:53.65]Tequila sunrise[00:55.71]Her body fit right in my hands la la la[01:00.85]It felt like ooh la la la yeah[01:04.28]Both：[01:04.47]I love it when you call me Señorita[01:08.54]I wish I could pretend I didn‘t need ya[01:12.64]But every touch is ooh la la la[01:15.76]It‘s true la la la[01:17.86]Ooh I should be runnin‘[01:19.85]Oohh you know I love it when you call me Señorita[01:25.05]I wish it wasn‘t so d**n hard to leave ya[01:29.12]But every touch is ooh la la la[01:32.26]It‘s true la la la[01:34.16]Ooh I should be runnin‘[01:36.18]Ooh you keep me coming for ya[01:38.54]Camila Cabello：[01:38.86]Locked in the hotel[01:40.86]There‘s just somethings that never change[01:42.92]You say we‘re just friends[01:44.92]But friends don‘t know the way you taste la la la[01:50.63]God knows it‘s been a long time coming don‘t ya let me fall ooh[01:54.50]Both：[01:55.08]Hooked on your lips undress me[01:57.03]Hooked on your tongue[01:58.99]Oh I love your kiss is deadly don‘t stop[02:02.11]I love it when you call me Señorita[02:06.04]I wish I could pretend I didn‘t need ya[02:10.04]But every touch is ooh la la la[02:13.11]It‘s true la la la[02:15.21]Ooh I should be runnin‘[02:17.23]Ooh you know I love it when you call me Señorita[02:22.42]I wish it wasn‘t so d**n hard to leave ya[02:26.48]But every touch is ooh la la la[02:29.60]It‘s true la la la[02:31.61]Ooh I should be runnin‘[02:33.68]Ooh you keep me coming for ya[02:37.44]All along I‘ve been coming for ya[02:40.31]For you[02:41.70]And I hope it means something to you[02:45.75]Call my name I‘ll be coming for ya[02:48.36]Coming for ya[02:49.42]Calling for ya[02:50.50]Coming for ya[02:51.81]For ya[02:55.80]For ya[02:57.87]Oh she loves it when I call her[02:59.94]For ya[03:04.55]Ooh I should be runnin‘[03:06.51]Ooh you keep me coming for ya"},{"name":"Brave Shine","artist":"《stay night [Unlimited Blade Works] 》OP专辑","url":"http://music.163.com/song/media/outer/url?id=32358691.mp3","cover":"http://p2.music.126.net/EnZBXon5cZWLPHEn2cHMFQ==/2940094094533735.jpg?param=130y130","lrc":"[00:16.72]左手に隠した[00:19.56]願いは願いのままで[00:22.62]覚めない幻(ゆめ)見てた[00:27.93]右手には空(から)の記憶[00:30.75]誰もしらない世界の果て[00:33.90]やまない雨にうたれていた[00:40.56]守りたいものを守れる強さ[00:46.02]それを信じられなくなる弱さ[00:50.40]すべてを受け入れて[00:53.15]未来(あした)を探す[00:55.73]Brave shine[00:58.48]手を伸ばせばまだ[01:00.91]Stay the night[01:04.10]傷だらけの夜[01:06.18]You save my life[01:09.61]かざした刃の先に[01:13.12]想いを重ねた[01:15.81]祈りは時を超えて[01:23.70]Your brave shine[01:29.70]光ること忘れた[01:32.47]青い星が残してく[01:35.40]消えない影見てた[01:40.87]すれ違う赤の軌道[01:43.70]何も知らない子供のまま[01:46.87]明けない夜を彷徨ってた[01:53.43]失くせないものを失くした弱さ[01:58.97]何も信じられなくなる脆さ[02:03.35]立てなくなっても[02:06.15]運命(さだめ)は進む[02:08.62]Break down[02:11.35]崩れ堕ちてゆく星座が[02:16.95]傷つけあう夜[02:19.15]You are breaking dawn[02:22.56]交わした約束(ことば)の中に[02:26.07]独りを支えた確かな理想(ゆめ)を添えで[02:37.42]...[02:55.31]守りたいものを守れるのなら[02:59.46]すべてを受け入れて[03:02.28]未来(あした)を探す[03:05.10]夜明けを灯す[03:07.60]Brave shine[03:10.38]手を伸ばせばまだ[03:13.01]Stay the night[03:15.93]傷だらけの夜[03:18.28]You save my life[03:21.52]重ねた涙の果てに[03:25.01]光を見つけた[03:27.72]祈りは時を超えて[03:35.49]My brave shine"}]')
+        new APlayer({
+            container: document.getElementById('aplayer'),
+            fixed: 'false' === 'true',
+            autoplay: 'false' === 'true',
+            theme: '#3498db',
+            loop: 'all',
+            order: 'list',
+            preload: 'auto',
+            volume: Number('0.7'),
+            listFolded: 'false' === 'true',
+            listMaxHeight: '197px',
+            lrcType: 1,
+            audio: JSON.parse('[{"name":"Beautiful World","artist":"Westlife","url":"http://music.163.com/song/media/outer/url?id=20707408.mp3","cover":"https://p2.music.126.net/MEWr-THANcYy-1jvx334_Q==/109951163167214019.jpg?param=130y130","lrc":"[00:00.00][00:02.700]Here we go, lost in the lessons[00:05.290]Sometimes I mess up my intentions[00:08.070]I get lost, the cost was losing everything I‘ve known[00:13.150]Laying here, staring at the ceiling[00:15.830]Sometimes still dealing with the feelings[00:18.450]Where I‘ve been, what I‘ve done[00:20.810]I‘m so far out there on my own[00:23.910]so quick to point the finger[00:26.420]To find the one to blame[00:29.010]So hard to realize, I kept getting in my own way[00:33.940][00:34.400]I never thought that I was that strong[00:40.490]To carry on, carry on tonight[00:45.800]Forgiveness in your eyes, with nothing to hide[00:50.210]All I know, it‘s shown me[00:53.770]It‘s a beautiful world[00:58.370]It‘s a beautiful world[01:04.230][01:06.188]No more fearing my reflection[01:08.668]Here I am, with these imperfections[01:11.260]You know my flaws,[01:13.540]But you don‘t care, can take them all[01:16.700]Till now I was barely breathing[01:19.310]But you gave me something to believe in[01:21.840]We‘re writing history[01:23.930]Life‘s made up of small victories[01:27.239]We could go round in circles[01:29.659]And never get to here[01:32.409]So good to realize that we have nothing left to fear[01:37.280][01:37.790]I never thought that I was that strong[01:43.819]To carry on, carry on tonight[01:49.110]Forgiveness in your eyes, with nothing to hide[01:53.730]All I know, it‘s shown me[01:56.828]It‘s a beautiful world[02:01.980]It‘s a beautiful world[02:07.608][02:09.259]So quick to point the finger[02:11.869]When it was me to blame[02:14.579]So hard to realize I kept getting in my own way[02:19.750]I never thought that I was that strong[02:20.569][02:26.000]To carry on, carry on tonight[02:31.259]Forgiveness in your eyes, with nothing to hide[02:35.810]All I know, it‘s shown me[02:39.539]It‘s a beautiful world[02:41.619][02:41.940]Oh, the stars alight[02:44.339]Let‘s watch them shine for you and I[02:51.179]Oh, these open skies[02:54.910]Can we just lie here a while[03:00.280]In this beautiful world[03:02.429][03:02.929]I never thought that I was that strong[03:08.109]To carry on[03:12.149]It‘s a beautiful world[03:16.060]It‘s a beautiful world[03:21.369]"},{"name":"SABLE","artist":"TV动画《M3~黑色之钢~》片尾曲","url":"http://music.163.com/song/media/outer/url?id=28828613.mp3","cover":"http://p1.music.126.net/InVIQE3FGPLZrv6K1UuRxQ==/5971447650923215.jpg?param=130y130","lrc":"[00:22.01]You lose your mind, you crash[00:23.84]A nervous breakdown[00:25.82]You feel an urge inside, you crush[00:28.44]There‘s no escape now[00:29.92][00:30.73]You try to change your life, you jump[00:33.15]Another letdown[00:35.31]But then you hear a voice inside[00:37.93]You gotta open up your vision[00:39.78]See the life bestowed on you[00:41.49]Blinded by reality[00:43.88]Broken ideology[00:46.16]Heart in captivity[00:48.57]Hold on[00:49.47]Exceeding the borders within[00:51.04]Seize your capability[00:53.51]Endless possibility[00:55.72]Find your individuality[00:58.19]Take pride, let the chase begin[00:59.66][01:00.05]Don‘t tell me what direction you think I should take[01:03.24](I know I‘m gonna find the way)[01:04.83]Don‘t tell me that this sable is for my own sake[01:07.65](Hear what I‘ve got to say)[01:09.75]Don‘t tell me to believe the decisions you make[01:12.46](I‘m facing a new day)[01:14.35]So open up your blinded eyes[01:16.95]Stop living a lie and start living your life[01:19.47][01:19.97]My way or no way[01:22.13]Today you‘re falling away[01:24.63]My way or no way[01:26.94]Today I‘m breaking away[01:29.44][01:31.63]You need a sign, you search[01:33.31]You‘re burning out[01:35.31]Your heart is run down[01:37.89]A system shut down[01:40.61]All you want is to face the fatal error[01:42.73]You‘ll never backdown[01:45.03]‘Cause it‘s now that you know the time is right[01:47.53]You gotta lead a revolution[01:49.42]Believe the only light in you[01:51.11]Look now, my sweetest fantasy is blinding your reality[01:55.77]I‘m breaking down the walls surrounding[01:57.87]your riduculously boring ideology[02:00.60]First chance, you let it slip away[02:02.84]One chance, you don‘t want to throw away[02:05.25]Fate is turning, returning to you square one[02:07.96]Get set and the game begins[02:09.65]Don‘t tell me that I‘m making another mistake[02:12.53](I know I‘m gonna find the way)[02:14.52]Don‘t tell me that I‘ll end in another heartache[02:17.29](Hear what I‘ve got to say)[02:19.23]Don‘t tell me that today is already too late[02:22.08](I‘m facing a new day)[02:23.95]So open up your blinded eyes[02:26.52]Stop living a lie and start living your life[02:31.98][02:39.12]Not everything is always what it seems[02:43.65]But there are things beyond what you could see[02:48.56]It doesn‘t mean that all the critical things are lost[02:51.02]It doesn‘t take defiance to be heard[02:53.36]You never needed the anger to move on[02:55.72]All you need is the will to hold on[02:58.11]Last chance[02:59.39]Take it or leave it[03:00.40]Nothing begins if you don‘t see it[03:02.80]This is how your life goes[03:08.00][03:09.95]Don‘t tell me what direction you think I should take[03:12.56](I know I‘m gonna find the way)[03:14.48]Don‘t tell me that this sable is for my own sake[03:17.31](Hear what I‘ve got to say)[03:19.22]Don‘t tell me to believe the decisions you make[03:22.11](I‘m facing a new day)[03:24.02]So open up your blinded eyes[03:26.54]Stop living a lie and start living your life[03:29.22]My way or no way[03:31.68]Today you‘re falling away[03:34.18]My way or no way[03:36.44]Today I‘m breaking away[03:39.09]My way or no way[03:41.52]Today you‘re falling away[03:43.83]My way or no way[03:46.09]Today I‘m breaking away"},{"name":"Hello My Love","artist":"Westlife","url":"http://music.163.com/song/media/outer/url?id=1338728670.mp3","cover":"https://p2.music.126.net/P2_COhPmlhsOpoj31DDLeA==/109951163785867445.jpg?param=130y130","lrc":"[00:00.000] 作曲 : Steve Mac/Ed Sheeran[00:00.630] 作词 : Steve Mac/Ed Sheeran[00:01.892]No one knows about the things[00:02.860]That I‘ve been through with you[00:05.682]There were times I‘d drive you nearly mental[00:09.620]But when your mad, you are still beautiful[00:17.573]And I know that I‘m punchin‘ way above[00:21.546]So lucky that we fell in love[00:25.395]Sometimes I wonder am I enough?[00:30.419]Cause you could have someone without a belly or a temper[00:35.817]Perfect teeth, hair growing where it’s meant to[00:39.567]You know my lips are all that I can hold against you[00:43.366]This is all I‘ll ever need, you and I[00:47.859]Hello My Love[00:50.819]I’ve been searching for someone like you[00:55.639]For most my life[00:58.785]Happiness ain’t a thing I’m used to[01:03.297]You could‘ve fallen hard for anyone[01:07.144]Plenty of fish in sea, hey now[01:11.435]For all of time, now I know[01:15.035]It‘s just my angel and me[01:20.563]No one know about all the good things you do[01:24.425]When people take advantage of you[01:28.359]Your heart is pure and so beautiful[01:36.287]And I know that it‘s just the way you are[01:40.327]Father‘s eyes but mother‘s daughter[01:44.240]And you tell me that you don‘t give enough[01:49.259]And now I found someone with all the boxes I want ticked[01:54.637]Cause your love is all I ever wanted[01:58.656]Set my heart on fire, I needed something[02:02.160]This is all I wanted to be, you and I[02:06.561]Hello My Love[02:09.444]I’ve been searching for someone like you[02:14.227]For most of my life[02:17.438]Happiness ain’t a thing I’m used to[02:22.091]You could‘ve fallen hard for anyone[02:25.709]Plenty of fish in sea, hey now[02:30.146]For all of time, now I know[02:33.407]It‘s just my angel and me[02:36.462]Cause you could have someone without a belly or a temper[02:41.822]Perfect teeth, hair growing where it’s meant to[02:45.611]You know my lips are all that I can hold against you[02:49.327]This is all I‘ll ever need[02:52.416]You and I[02:54.335]You and I[02:55.726]Hello My Love[02:58.784]I’ve been searching for someone like you[03:03.531]For most of my life[03:06.330]Happiness ain’t a thing I’m used to[03:11.316]You could‘ve fallen hard for anyone[03:15.047]Plenty of fish in sea, hey now[03:19.375]For all of time, now I know[03:22.938]It‘s just my angel and me"},{"name":"If I Let You Go","artist":"Westlife","url":"http://music.163.com/song/media/outer/url?id=27220254.mp3","cover":"https://p2.music.126.net/TcOOoZSbISGT9AkhUtwOsg==/5644892697128237.jpg?param=130y130","lrc":"[00:04.00]Day after day, time pass away[00:10.00]And I just can‘t get you off my mind[00:15.00]Nobody knows, I hide it inside[00:20.00]I keep on searching, but I can‘t find....[00:25.00]The courage to show, to letting you know[00:31.00]I‘ve never felt so much love before[00:36.00]And once again, I‘m thinking about[00:41.00]Taking the easy way out[00:45.00]But if I let you go, I will never know[00:51.00]What my life would be, holding you close to me[00:56.00]Will I ever see, you smiling back at me?[01:01.00]Oh yeah[01:02.00]How will I know....?[01:05.00]If I let you go[01:10.00]Night after night, I hear myself say[01:15.00]Why can‘t this feeling just fade away[01:20.00]There‘s no-one like you, you speak to my heart[01:25.00]It‘s such a shame, we‘re worlds apart[01:30.00]I‘m too shy to ask, I‘m too proud to lose[01:35.00]But sooner or later, I gotta choose[01:40.00]And once again, I‘m thinking about[01:46.00]Taking the easy way out[01:50.00]But if I let you go, I will never know[01:56.00]What my life would be, holding you close to me[02:01.00]Will I ever see, you smiling back at me?[02:06.00]Oh yeah[02:07.00]How will I know....?[02:10.00]If I let you go[02:17.00]If I let you go[02:22.00]Ooh baby[02:32.00]Once again I‘m thinking about[02:38.00]taking the easy way out[02:43.00]But if I let you go, I will never know[02:49.00]What my life would be, holding you close to me[02:54.00]Will I ever see, you smiling back at me?[02:59.00]Oh yeah[03:00.00]How will I know....?[03:03.00]If I let you go[03:05.00]But if I let you go, I will never know[03:10.00]Oh baby[03:15.00]Will I ever see, you smiling back at me?[03:20.00]Oh yeah[03:21.00]How will I know....?[03:27.00]If I let you go"},{"name":"Señorita","artist":"Shawn Mendes/Camila Cabello","url":"http://music.163.com/song/media/outer/url?id=1373168742.mp3","cover":"https://p2.music.126.net/eSrLKe5g3U8jX-lb629q6A==/109951164162885535.jpg?param=130y130","lrc":"[by:Trap_Girl][00:00.000] 作曲 : Shawn Mendes/Camila Cabello/Andrew Wotman/Benjamin Levin/Ali Tamposi/Charlotte Emma Aitchison/Jack Patterson/Magnus August Höiberg[00:01.000] 作词 : Shawn Mendes/Camila Cabello/Andrew Wotman/Benjamin Levin/Ali Tamposi/Charlotte Emma Aitchison/Jack Patterson/Magnus August Höiberg[00:12.22]Camila Cabello：[00:15.29]I love it when you call me Señorita[00:19.36]I wish I could pretend I didn‘t need ya[00:23.43]But every touch is ooh la la la[00:26.54]It‘s true la la la[00:28.51]Ooh I should be runnin‘[00:30.57]Ooh you keep me coming for ya[00:32.95]Shawn Mendes：[00:33.29]Land in miami[00:35.22]The air was hot from summer rain[00:37.27]Sweat dripping off me[00:39.44]Before I even knew her name la la la[00:44.41]It felt like ooh la la la[00:47.07]Yeah noo[00:49.47]Sapphire moonlight[00:51.50]We danced for hours in the sand[00:53.65]Tequila sunrise[00:55.71]Her body fit right in my hands la la la[01:00.85]It felt like ooh la la la yeah[01:04.28]Both：[01:04.47]I love it when you call me Señorita[01:08.54]I wish I could pretend I didn‘t need ya[01:12.64]But every touch is ooh la la la[01:15.76]It‘s true la la la[01:17.86]Ooh I should be runnin‘[01:19.85]Oohh you know I love it when you call me Señorita[01:25.05]I wish it wasn‘t so d**n hard to leave ya[01:29.12]But every touch is ooh la la la[01:32.26]It‘s true la la la[01:34.16]Ooh I should be runnin‘[01:36.18]Ooh you keep me coming for ya[01:38.54]Camila Cabello：[01:38.86]Locked in the hotel[01:40.86]There‘s just somethings that never change[01:42.92]You say we‘re just friends[01:44.92]But friends don‘t know the way you taste la la la[01:50.63]God knows it‘s been a long time coming don‘t ya let me fall ooh[01:54.50]Both：[01:55.08]Hooked on your lips undress me[01:57.03]Hooked on your tongue[01:58.99]Oh I love your kiss is deadly don‘t stop[02:02.11]I love it when you call me Señorita[02:06.04]I wish I could pretend I didn‘t need ya[02:10.04]But every touch is ooh la la la[02:13.11]It‘s true la la la[02:15.21]Ooh I should be runnin‘[02:17.23]Ooh you know I love it when you call me Señorita[02:22.42]I wish it wasn‘t so d**n hard to leave ya[02:26.48]But every touch is ooh la la la[02:29.60]It‘s true la la la[02:31.61]Ooh I should be runnin‘[02:33.68]Ooh you keep me coming for ya[02:37.44]All along I‘ve been coming for ya[02:40.31]For you[02:41.70]And I hope it means something to you[02:45.75]Call my name I‘ll be coming for ya[02:48.36]Coming for ya[02:49.42]Calling for ya[02:50.50]Coming for ya[02:51.81]For ya[02:55.80]For ya[02:57.87]Oh she loves it when I call her[02:59.94]For ya[03:04.55]Ooh I should be runnin‘[03:06.51]Ooh you keep me coming for ya"},{"name":"Brave Shine","artist":"《stay night [Unlimited Blade Works] 》OP专辑","url":"http://music.163.com/song/media/outer/url?id=32358691.mp3","cover":"http://p2.music.126.net/EnZBXon5cZWLPHEn2cHMFQ==/2940094094533735.jpg?param=130y130","lrc":"[00:16.72]左手に隠した[00:19.56]願いは願いのままで[00:22.62]覚めない幻(ゆめ)見てた[00:27.93]右手には空(から)の記憶[00:30.75]誰もしらない世界の果て[00:33.90]やまない雨にうたれていた[00:40.56]守りたいものを守れる強さ[00:46.02]それを信じられなくなる弱さ[00:50.40]すべてを受け入れて[00:53.15]未来(あした)を探す[00:55.73]Brave shine[00:58.48]手を伸ばせばまだ[01:00.91]Stay the night[01:04.10]傷だらけの夜[01:06.18]You save my life[01:09.61]かざした刃の先に[01:13.12]想いを重ねた[01:15.81]祈りは時を超えて[01:23.70]Your brave shine[01:29.70]光ること忘れた[01:32.47]青い星が残してく[01:35.40]消えない影見てた[01:40.87]すれ違う赤の軌道[01:43.70]何も知らない子供のまま[01:46.87]明けない夜を彷徨ってた[01:53.43]失くせないものを失くした弱さ[01:58.97]何も信じられなくなる脆さ[02:03.35]立てなくなっても[02:06.15]運命(さだめ)は進む[02:08.62]Break down[02:11.35]崩れ堕ちてゆく星座が[02:16.95]傷つけあう夜[02:19.15]You are breaking dawn[02:22.56]交わした約束(ことば)の中に[02:26.07]独りを支えた確かな理想(ゆめ)を添えで[02:37.42]...[02:55.31]守りたいものを守れるのなら[02:59.46]すべてを受け入れて[03:02.28]未来(あした)を探す[03:05.10]夜明けを灯す[03:07.60]Brave shine[03:10.38]手を伸ばせばまだ[03:13.01]Stay the night[03:15.93]傷だらけの夜[03:18.28]You save my life[03:21.52]重ねた涙の果てに[03:25.01]光を見つけた[03:27.72]祈りは時を超えて[03:35.49]My brave shine"}]')
+        });
+    });
+</script>
+                    
+                    
+                    
+                    
+                    
+                    <div id="recommend-sections" class="recommend">
+                        
+
+
+
+
+
+<div class="title"><i class="fa fa-thumbs-o-up"></i>&nbsp;&nbsp;推荐文章</div>
+
+<div class="row">
+
+    
+    
+    <div class="col s12 m6" >
+        <div class="post-card" style="background-image: url('/medias/featureimages/17.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                    <a href="/categories/前端/" class="category" target="_blank">前端</a>
+                    
+                </div>
+                <a href="/2020/07/08/js-set-source/" target="_blank">
+                    <h3 class="post-title">js数组去重</h3>
+                </a>
+                <p class="post-description">
+                    
+                        我觉得需要结合实际项目需求开发，根据需求来选择哪种去重方法，根据需求来修改某些条件，或者增加条件，适合需求的才是最好的去重方法。
+                    
+                </p>
+                <a href="/2020/07/08/js-set-source/" target="_blank"
+                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)">
+                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" >
+        <div class="post-card" style="background-image: url('/medias/featureimages/16.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                    <a href="/categories/软件安装与配置/" class="category" target="_blank">软件安装与配置</a>
+                    
+                </div>
+                <a href="/2019/08/27/blog-open-source/" target="_blank">
+                    <h3 class="post-title">博客开源</h3>
+                </a>
+                <p class="post-description">
+                    
+                        倒腾了一两周总算把个人博客网站完善了，目前这个版本使用应该是够了，当然还有一些优化项和功能增加后续在慢慢更新，为了回馈开源，今天准备把我自己修改完善的`blog`网站源代码开源。这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了。
+                    
+                </p>
+                <a href="/2019/08/27/blog-open-source/" target="_blank"
+                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)">
+                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles">
+        <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/07/08/js-set-source/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="js数组去重">
+                            
+                            <span class="card-title">js数组去重</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            我觉得需要结合实际项目需求开发，根据需求来选择哪种去重方法，根据需求来修改某些条件，或者增加条件，适合需求的才是最好的去重方法。
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-08
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/前端/" class="post-category" target="_blank">
+                                    前端
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/javascript/" target="_blank">
+                            <span class="chip bg-color">javascript</span>
+                        </a>
+                        
+                        <a href="/tags/ES6/" target="_blank">
+                            <span class="chip bg-color">ES6</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/08/27/blog-open-source/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="博客开源">
+                            
+                            <span class="card-title">博客开源</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            倒腾了一两周总算把个人博客网站完善了，目前这个版本使用应该是够了，当然还有一些优化项和功能增加后续在慢慢更新，为了回馈开源，今天准备把我自己修改完善的`blog`网站源代码开源。这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了。
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-27
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/软件安装与配置/" class="post-category" target="_blank">
+                                    软件安装与配置
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Hexo/" target="_blank">
+                            <span class="chip bg-color">Hexo</span>
+                        </a>
+                        
+                        <a href="/tags/Github/" target="_blank">
+                            <span class="chip bg-color">Github</span>
+                        </a>
+                        
+                        <a href="/tags/博客/" target="_blank">
+                            <span class="chip bg-color">博客</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
+
+</main>
+
+
+    <footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&copy; 2020 Mrxh.
+
+            <br>
+            <span id="sitetime"></span><span class="my-face">ღゝ◡╹)ノ♡</span>
+            <br>
+
+            
+
+            <!--  -->
+            
+            <span id="busuanzi_container_site_pv" style='display:none'></span>
+            总访问量: <span id="busuanzi_value_site_pv" class="white-color"></span>
+            
+
+            
+            <span id="busuanzi_container_site_uv" style='display:none'></span>
+            人次&nbsp; | &nbsp;访客人数: <span id="busuanzi_value_site_uv" class="white-color"></span> 人
+            
+
+            <!--  -->
+
+            
+            &nbsp; | &nbsp;字数统计:&nbsp;
+            <span class="white-color">1.8k</span> 字
+            
+
+            
+            <br>
+
+        </div>
+
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Mrxh" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+ 
+    <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2929314899@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+
+    <a href="https://zhihu.com/people/wei-liao-ming-tian-91-6" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fa fa-inverse">知</i>
+    </a>
+
+
+
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=2929314899&site=qq&menu=yes" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/5610887879" class="tooltipped" target="_blank" data-tooltip="关注我的微博" data-position="top" data-delay="50">
+        <i class="fa fa-weibo"></i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa fa-rss"></i>
+    </a>
+</div>
+
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+
+        var t1 = Date.UTC(2020, 07, 09, 00, 00, 00); //北京时间2019-8-1 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes *
+            minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已勉强运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours +
+            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+    } /*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+
+    $(document).ready(function () {
+        var int = setInterval(fixCount,
+            50); // 50ms周期检测函数 
+        var pvcountOffset = 0; // 初始化首次数据 
+        var uvcountOffset = 0;
+
+        function fixCount() {
+            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) +
+                    pvcountOffset);
+                clearInterval(int);
+            }
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) +
+                    uvcountOffset); // 加上初始数据 
+                clearInterval(int); // 停止检测 
+            }
+        }
+    });
+</script>
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+    <script src="https://cdn.bootcss.com/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.bootcss.com/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.bootcss.com/aos/3.0.0-beta.6/aos.js"></script>
+    <script src="https://cdn.bootcss.com/scrollprogress/3.0.2/scrollProgress.min.js"></script>
+    <script src="https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    
+    <script src="/libs/others/clicklove.js"></script>
+    
+
+    
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+    <!-- 洪卫 shw2018 add 2019.08.28 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
+
+    <!-- 鼠标点击烟花爆炸效果  洪卫 shw2018 add 2019.09.09 -->
+    
+    <canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"></canvas>
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+    
+
+    <!-- 背景雪花飘落特效洪卫 shw2018 add 2019.09.10 -->
+    
+    <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+    </script>
+    
+
+    <!-- 鼠标点击文字特效 洪卫 shw2018 add 2019.09.10-->
+    
+    <script src="/js/wenzi.js" type="text/javascript"></script>
+    
+
+    <!-- 背景雪花飘落特效 洪卫 shw2018 add 2019.09.10 -->
+    
+
+    <!-- 在线聊天工具  洪卫 shw2018 add 2019.09.11 -->
+    
+    <script src="//code.tidio.co/xxxxxxxxxxxxxxxxxxxxxxxxxxx.js"></script>
+    <!--  在线聊天位置自定义  洪卫 shw2018 add 2019.09.13  -->
+    <script>
+        $(document).ready(function () {
+
+            setInterval(change_Tidio, 50);
+
+            function change_Tidio() {
+
+                var tidio = $("#tidio-chat iframe");
+                if (tidio.css("display") == "block" && $(window).width() > 977) {
+                    document.getElementById("tidio-chat-iframe").style.bottom = ($("div#backTop.top-scroll")
+                        .css("display") == "none" && $(window).width() > 977) > 0 ? "-40px" : ($(
+                        "div.toc-title").length && $(window).width() > 977) > 0 ? "80px" : "20px";
+                    document.getElementById("tidio-chat-iframe").style.right = "-15px";
+                    document.getElementById("tidio-chat-iframe").style.height = parseInt(tidio.css("height")) >=
+                        520 ? "520px" : tidio.css("height");
+                    document.getElementById("tidio-chat-iframe").style.zIndex = "997";
+                } else if (tidio.css("display") == "block" && $(window).width() > 601 && $(window).width() <
+                    992) {
+                    document.getElementById("tidio-chat-iframe").style.bottom = ($("div#backTop.top-scroll")
+                        .css("display") == "none" && 601 < $(window).width() < 992) > 0 ? "-40px" : "20px";
+                    document.getElementById("tidio-chat-iframe").style.right = "-15px";
+                    document.getElementById("tidio-chat-iframe").style.zIndex = "997";
+                } else if (tidio.css("display") == "block" && $(window).width() < 601 && parseInt(tidio.css(
+                        "height")) < 230) {
+                    document.getElementById("tidio-chat-iframe").style.bottom = ($("div#backTop.top-scroll")
+                        .css("display") == "none" && $(window).width() < 601) > 0 ? "-10px" : "45px";
+                    document.getElementById("tidio-chat-iframe").style.zIndex = "997";
+                }
+
+                if (tidio.css("display") == "block" && $(window).width() < 601 && parseInt(tidio.css(
+                        "height")) >= 230) {
+                    document.getElementById("tidio-chat-iframe").style.zIndex = "998";
+                }
+            }
+        });
+    </script>
+    
+
+    <!-- 背景 canvas-nest  洪卫 shw 2018  add 2019.09.15-->
+    
+
+    <!-- 背景静止彩带  洪卫 shw 2018  add 2019.09.15-->
+    
+
+    <!-- 背景动态彩带 洪卫 shw 2018  add 2019.09.15-->
+    
+    <script type="text/javascript">
+        var windowWidth = $(window).width();
+        if (windowWidth > 992) {
+            document.write('<script type="text/javascript" src="/libs/background/ribbon-dynamic.js"><\/script>');
+        }
+    </script>
+    
+
+    <!--天气插件-->
+    
+    <!-- weather -->
+<script type="text/javascript">
+    WIDGET = {
+        FID: 'WlziuCjIjB'
+    }
+</script>
+
+<script type="text/javascript">
+    //只在桌面版网页启用特效 
+    var windowWidth = $(window).width();
+    if (windowWidth > 768) {
+        document.write(
+            '<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>'
+        );
+    }
+</script>
+    
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":150,"height":200},"mobile":{"show":false},"react":{"opacity":0.7}});</script><script>!function(e){var r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var c=0;c<r.length;c++)t=r[c],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=r[c];t=o,n=function(){r=r.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);</script></body>
+
+</html>
